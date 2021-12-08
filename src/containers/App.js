@@ -29,7 +29,7 @@ export default function App() {
 
   const onSearch = (city) => {
     const apiKey = "42526a29e58732a4eb1ac1ffe2b9bfda";
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
       .then(r => r.json())
       .then(recurso => {
         if(recurso.main){
