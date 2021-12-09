@@ -14,7 +14,7 @@ function PreCard({className, id, name, onClose, min, max, img}) {
           <h2>{name}</h2>
           <p>Min<span>{Math.round(min)}°</span></p>
           <p>Max<span>{Math.round(max)}°</span></p>
-          <img src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt="Weather state"/>
+          <img src={`https://openweathermap.org/img/wn/${img}@2x.png`} alt="Weather state"/>
         </Link>
       </div>
     ) 
